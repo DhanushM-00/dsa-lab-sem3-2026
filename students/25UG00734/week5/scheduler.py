@@ -1,4 +1,5 @@
 class Job:
+    
     def __init__(self, name, priority, submitted):
         self.name = name
         self.priority = priority
