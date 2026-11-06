@@ -1,19 +1,6 @@
-"""
-PyDTree - The Adaptive Knowledge Tree & 20-Questions Engine
-Lab 4 Assignment: Non-Linear Hierarchies & Self-Learning Decision Trees
-
-Plain Python, no imports at all.
-(Saving/loading uses a simple text file instead of JSON.)
-"""
-
 
 class TreeNode:
-    """A node in the decision tree.
-
-    Leaf     -> text is a guess (e.g. 'Dog'), both children are None.
-    Internal -> text is a yes/no question, yes_child / no_child are subtrees.
-    """
-
+ 
     def __init__(self, text, yes_child=None, no_child=None):
         self.text = text.strip()
         self.yes_child = yes_child

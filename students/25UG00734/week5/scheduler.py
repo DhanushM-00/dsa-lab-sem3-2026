@@ -11,8 +11,7 @@ class Job:
 
 
 def parent(i):
-    return (i - 1) // 2  # FIX 2: integer division, not float
-
+    return (i - 1) // 2  
 
 def left(i):
     return 2 * i + 1
@@ -64,8 +63,8 @@ class GPUQueue:
                 last = self.h.pop()
                 if i < len(self.h):
                     self.h[i] = last
-                    self.sift_up(i)    # FIX 5: moved job may need to go up...
-                    self.sift_down(i)  # ...or down
+                    self.sift_up(i)    
+                    self.sift_down(i)  
                 return True
         return False
 
